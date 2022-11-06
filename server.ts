@@ -13,11 +13,11 @@ setInterval(() => {
   remindBirthdays();
 }, 1000 * 60 * 60 * 24);
 
-// Queue hourly tasks
-remindJobs();
-setInterval(() => {
-  remindJobs();
-}, 1000 * 60 * 60);
+// // Queue hourly tasks - Removed for Deno Deploy
+// remindJobs();
+// setInterval(() => {
+//   remindJobs();
+// }, 1000 * 60 * 60);
 
 const port = 8000;
 const app = new Application();
